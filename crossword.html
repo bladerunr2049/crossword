@@ -1,0 +1,158 @@
+<h2>Animal & Birds Crossword Puzzle</h2>
+
+<table>
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td id="11"><input class="inpt" type="text"></input></td>
+    <td id="12"><input class="inpt" type="text"></input></td>
+    <td id="13"><input class="inpt" type="text"></input></td>
+    <td id="14"><input class="inpt" type="text"></input></td>
+    <td id="15"><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+
+  <tr>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+  <tr>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td ><input class="inpt" type="text"></input></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+    <td class="dark"></td>
+  </tr>
+
+</table>
+
+
+<h3>Across</h3>
+<ol>
+<li>What waterbird is known for its distinctive V-shaped flying formation during migration? (5 letters)</li>
+<li>Small, furry mammal known for its long ears and powerful back legs (4 letters)</li>
+<li>What is the other name for the puma, a large, solitary cat native to the Americas (4 letters)</li>
+<li>What is the name of the process by which fish lay and fertilize eggs outside of the body, often in nests or in gravel beds (4 letters)</li>
+<li>What primate species is the closest living relative to humans (3 letters)</li>
+</ol>
+<br>
+<h3>Down</h3>
+<ol>
+<li>Large, gray mammal known for its intelligence and memory (8 letters)</li>
+</ol>
+
+<script>
+var inputs = document.querySelectorAll("input.inpt");
+
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("input", function() {
+    var allValues = "";
+    for (var j = 11; j <= 15; j++) {
+      allValues += document.getElementById("" + j).getElementsByTagName("input")[0].value;
+    }
+    if (allValues === "GEESE") {
+      for (var k = 11; k <= 15; k++) {
+        document.getElementById("" + k).getElementsByTagName("input")[0].style.color = "green";
+      }
+    } else {
+      for (var k = 11; k <= 15; k++) {
+        document.getElementById("" + k).getElementsByTagName("input")[0].style.color = "red";
+      }
+    }
+  });
+}
+</script>
+
+
+<style>
+table {
+  text-align: center;
+  padding:10px;
+  border:1px dashed #888;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+}
+
+.dark {
+  background:#333;
+  
+}
+
+.inpt {
+  width: 30px;
+  height: 30px;
+  font-size:24px;
+  text-align:center;
+  border: 2px solid #222;
+}
+
+</style>
