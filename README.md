@@ -15,5 +15,5 @@ A Pure HTML, CSS and JavaScript Based Crossword Puzzle
 <ol>
   <li>This implementation provides a foundational starting point for the development of a fully functional puzzle solution.</li>
   <li>JavaScript demo is just for one of the examples and can be built on</li>
-  <li>Lisense: MIT</li>
+  <li>License: MIT</li>
 </ol>
